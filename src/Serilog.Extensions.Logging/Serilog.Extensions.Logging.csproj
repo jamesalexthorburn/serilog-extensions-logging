@@ -4,7 +4,7 @@
     <Description>Low-level Serilog provider for Microsoft.Extensions.Logging</Description>
     <VersionPrefix>3.1.1</VersionPrefix>
     <Authors>Microsoft;Serilog Contributors</Authors>
-    <TargetFrameworks>netstandard2.0</TargetFrameworks>
+    <TargetFrameworks>net6.0</TargetFrameworks>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <AssemblyName>Serilog.Extensions.Logging</AssemblyName>
@@ -27,8 +27,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Serilog" Version="2.9.0" />
     <PackageReference Include="Microsoft.Extensions.Logging" Version="2.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\serilog\src\Serilog\Serilog.csproj" />
   </ItemGroup>
 
 </Project>
